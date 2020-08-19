@@ -19,6 +19,12 @@ app.get('*', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.use('/static', express.static('static'));
+app.use('/public', express.static('public'));
+
+
+
+
 app.listen(8080, function() {
     console.log("I'm listening.");
 });
