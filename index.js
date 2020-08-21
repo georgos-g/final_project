@@ -4,6 +4,12 @@ const compression = require('compression');
 
 app.use(compression());
 
+app.use('/static', express.static('static'));
+app.use('/public', express.static('public'));
+app.use('/assets', express.static('assets'));
+app.use('/portfolio', express.static('portfolio'));
+app.use('/public', express.static('public'));
+
 if (process.env.NODE_ENV != 'production') {
     app.use(
         '/bundle.js',
@@ -16,13 +22,11 @@ if (process.env.NODE_ENV != 'production') {
 }
 
 app.get('*', function(req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/index_react.html');
 });
 
-app.use('/static', express.static('static'));
-app.use('/public', express.static('public'));
 
-
+  
 
 
 app.listen(8080, function() {
