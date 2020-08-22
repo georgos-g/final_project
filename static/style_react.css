@@ -41,13 +41,13 @@
    /* display:none; */
 }
 
-/* 
-.show_module_dragged {
+.center_row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+/* 
 .show_module_dragged img {
     width: 200px;
     height: 100px;
