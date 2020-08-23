@@ -56,31 +56,38 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     //margin: `0 0 ${grid}px 0`,
 
     // change background colour if dragging
-    background: isDragging ? "lightgreen" : "grey",
+    background: isDragging ? "rgba(255, 255, 255, 0.5)" : "grey",
 
     // styles we need to apply on draggables
     ...draggableStyle,
 });
 //style on drag
 const getListStyle = (isDraggingOver) => ({
-    background: isDraggingOver ? "lightblue" : "#161616",
-    display: 'flex',
-    padding: grid,
-    width: "100%",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
+    background: isDraggingOver ? "rgba(255, 255, 255, 0.2)" : "#161616",
+    //display: 'flex',
+    // padding: grid,
+    // width: "100%",
+    // flexDirection: "row",
+    // flexWrap: "wrap",
+    // justifyContent: "center",
 
 });
 
 const getListStyleSecond = (isDraggingOver) => ({
-    background: isDraggingOver ? "lightblue" : "grey",
+    paddingTop: 10,
+    paddingBottom: 10,
+    //background: isDraggingOver ? "lightblue" : "transparent",
     display: 'flex',
-    padding: grid,
+    //padding: grid,
     width: "100%",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
+    minHeight: 200,
+    backgroundImage: "url('./assets/images/bg3.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: '50%',
+    backgroundAttachment: 'fixed',
 
 });
 
@@ -98,32 +105,38 @@ class App extends Component {
                     link:
                         "https://event-entertainment.eu/portfolio/hoverboard-showact/",
                     filter: "hitech",
+                    classSt: "portfolio-item",
                 },
 
                 {
                     name: "Show 1",
                     img: "./assets/images/portfolio/projekt1.jpg",
                     filter: "hitech",
+                    classSt: "portfolio-item",
                 },
                 {
                     name: "Show 2",
                     img: "./assets/images/portfolio/Projekt2.jpg",
                     filter: "hitech",
+                    classSt: "portfolio-item",
                 },
                 {
                     name: "Show 3",
                     img: "./assets/images/portfolio/projekt3.jpg",
                     filter: "funny",
+                    classSt: "portfolio-item",
                 },
                 {
                     name: "Show 4",
                     img: "./assets/images/portfolio/projekt4.jpg",
                     filter: "funny",
+                    classSt: "portfolio-item",
                 },
                 {
                     name: "Show 5",
                     img: "./assets/images/portfolio/Projekt_5.jpg",
                     filter: "funny",
+                    classSt: "portfolio-item",
                 },
             ],
 
@@ -193,7 +206,8 @@ class App extends Component {
                             ref={provided.innerRef}
                             style={getListStyle(snapshot.isDraggingOver)}
                         >
-                            {/* //Filter  */}
+                            {/* ================== Portfolio Filter ==================  */}
+                            <div></div>
                             <div className="row">
                                 <ul id="pfolio-filters" className="portfolio-filters">
                                     <li className="active"><a href="#" data-filter="*">All</a></li>
@@ -202,67 +216,77 @@ class App extends Component {
         
                                 </ul>
                             </div>
+                            
+                            <div id='pfolio'>
 
-                            {/* <div id='pfolio'> */}
 
-
-                            {this.state.items.map(
-                                ({ name, img, link, filter }, index) => (
-                                    <Draggable
-                                        key={name}
-                                        draggableId={name}
-                                        index={index}
-                                        link={link}
-                                        filter={filter}
-                                    >
-                                        {(provided, snapshot) => (
+                                {this.state.items.map(
+                                    ({ name, img, link, filter, classSt }, index) => (
+                                        <Draggable
+                                            key={name}
+                                            draggableId={name}
+                                            index={index}
+                                            link={link}
+                                            filter={filter}
+                                            classSt={classSt}
+                                        >
+                                            {(provided, snapshot) => (
                                             // Show module draggable
-                                            <div
-                                                className="show_module"
-                                                ref={provided.innerRef}
-                                                {...provided.draggableProps}
-                                                {...provided.dragHandleProps}
-                                                style={getItemStyle(
-                                                    snapshot.isDragging,
-                                                    provided.draggableProps
-                                                        .style
-                                                )}
-                                            >
-                                                {/* <div className="show_module_img-txt"> */}
-                                                <div className={filter}>
-                                                    <div className="portfolio-item hover-bottom show_module_img-txt">
-                                                        {/* {item.content} */}
-                                                        <img src={img}></img>
-                                                        {name}
+                                                <div
+                                                    className="show_module"
+                                                    ref={provided.innerRef}
+                                                    {...provided.draggableProps}
+                                                    {...provided.dragHandleProps}
+                                                    style={getItemStyle(
+                                                        snapshot.isDragging,
+                                                        provided.draggableProps
+                                                            .style
+                                                    )}
+                                                >
+                                                    {/* <div className="show_module_img-txt"> */}
+                                                    <div className={"portfolio-item " + filter}>
+                                                        <div className="show_module_img-txt"> 
+                                                        
+                                                            {/* <div className="portfolio-item hover-bottom show_module_img-txt"> */}
+                                                            {/* {item.content} */}
+                                                            <img src={img}></img>
+                                                            {name}
 
-                                                        <button className="btn-small btn-ghost-light">
-                                                            <a href={link} onClick={link}>MORE</a>
-                                                        </button>
+                                                            <button className="btn-small btn-ghost-light">
+                                                                <a href={link} onClick={link}>MORE</a>
+                                                            </button>
 
-                                                        <div className="show_module_description">
-                                                            {link}
+                                                            <div className="show_module_description">
+                                                                {/* {link} */}
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        )}
-                                    </Draggable>
-                                )
-                            )}
-                            {provided.placeholder}
-                            {/* </div> */}
+                                            )}
+                                        </Draggable>
+                                    )
+                                )}
+                                {provided.placeholder}
+                            </div>
                             {/* //pfolio */}
                         </div>
 
                     )}
                 </Droppable>
                 {/* ------------SECOND AREA----------------- */}
+                <div>
+                   
+                    <header className="sec-heading section-30-0">
+                        <span className="subheading">drop the show moduls here</span>
+                    </header>
+                </div>
                 <Droppable droppableId="droppable2" direction="horizontal">
                     {(provided, snapshot) => (
-                        <div
+                        <div 
                             ref={provided.innerRef}
                             style={getListStyleSecond(snapshot.isDraggingOver)}
                         >
+                     
                             {this.state.selected.map(
                                 ({ name, img, link }, index) => (
                                     <Draggable
@@ -283,11 +307,12 @@ class App extends Component {
                                                         .style
                                                 )}
                                             >
+                                                
                                                 <div className="show_module_img-txt">
                                                     {/* {item.content} */}
                                                     <img src={img}></img>
                                                     {name}
-                                                    {link}
+                                                    {/* {link} */}
                                                 </div>
                                             </div>
                                         )}
@@ -305,9 +330,11 @@ class App extends Component {
                     )}
                 </Droppable>
 
+                {/* ====== EMAIL FORM ====== */}
+
                 {
                     <div>
-                        <header className="sec-heading">
+                        <header className="sec-heading section-30-0">
                             <span className="subheading">
                                 send us your production ideas
                             </span>
@@ -380,7 +407,7 @@ class App extends Component {
                                     <input
                                         type="submit"
                                         className="btn pull-right"
-                                        value="Send your choice"
+                                        value="Send your choices"
                                     ></input>
 
                                     {/* <!-- Ajax Message --> */}
@@ -394,6 +421,6 @@ class App extends Component {
         );
     }
 }
-console.log("GG1531");
+console.log("GG 20:27");
 // Put the things into the DOM!
 ReactDOM.render(<App />, document.getElementById("react"));
