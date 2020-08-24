@@ -361,8 +361,10 @@ class App extends Component {
     // Normally you would want to split things out into separate components.
     // But in this example everything is just done in one place for simplicity
     render() {
+
         return (
             <DragDropContext onDragEnd={(result) => this.onDragEnd(result)}>
+                
                 <Droppable droppableId="droppable" direction="horizontal">
                     {(provided, snapshot) => (
                         //kasten-----------------------------------------------
@@ -381,6 +383,7 @@ class App extends Component {
                                     <li><a href="#" data-filter=".music">Music</a></li>
                                     <li><a href="#" data-filter=".special">Special</a></li>
                                     <li><a href="#" data-filter=".variete">Variete</a></li>
+
         
                                 </ul>
                             </div>
@@ -589,6 +592,6 @@ class App extends Component {
         );
     }
 }
-console.log("GG 20:27");
+console.log("GG 14:06");
 // Put the things into the DOM!
 ReactDOM.render(<App />, document.getElementById("react"));
