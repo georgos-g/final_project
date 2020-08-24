@@ -265,8 +265,37 @@ class App extends Component {
                     img: "./static/cube-showact-05-650x365.jpg",
                     link: "https://event-entertainment.eu/language/en/portfolio/cube-show-act/",
                     filter: "variete",
-                    info: "The impressive Jonglange with the cube made of chrome and steel: “force equals mass times acceleration”",
+                    info: "An impressive Jonglange with the cube made of chrome and steel: “force equals mass times acceleration”",
                 },
+
+                {
+                    name: "DANCE ON HANDS ",
+                    img: "./static/handstand-showact-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/handstand-show-act/",
+                    filter: "variete",
+                    info: "Two hands, one body, a thousand figures. A combination of Handstand-Acrobatics, contortion and dance",
+                },
+
+                {
+                    name: "HANDVOLTIGE",
+                    img: "./static/hand-voltige-showact_01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/handvoltige-show-act/",
+                    filter: "variete",
+                    info: "Up to ten performers whirl across the stage creating moments of breathless suspense",
+                },
+
+                {
+                    name: "CYR WHEEL",
+                    img: "./static/CyrWheel_01-e1496232945413-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/cyr-wheel-show-act/",
+                    filter: "variete",
+                    info: "the Cyr Wheel is a 360° universe of its own, where impressive pictures are created in its orbit.",
+                },
+
+
+
+
+
 
 
 
