@@ -1,0 +1,33 @@
+{<div>
+                    
+    <form action="./dbp/assets/contact-form/contact-form.php" method="POST" className="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+
+        {/* <!-- Name --> */}
+        <div className="form-group">
+            <input type="text" name="name" id="name-contact-1" className="form-control validate-locally" placeholder="Enter your name"></input>
+            <label for="name-contact-1">Name</label>
+            <span className="pull-right alert-error"></span>
+        </div>
+
+        {/* <!-- Email --> */}
+     
+        <div className="form-group">
+            <input type="email" name="email" id="email-contact-1" className="form-control validate-locally" placeholder="Email">
+                <label for="email-contact-1">Email</label>
+                <span className="pull-right alert-error"></span>
+       
+                <p className="antispam">Leave this empty: <br /><input name="url" /></p></input>
+        </div>
+
+        {/* <!-- Message --> */}
+        <div className="not_visible form-group ">
+            <textarea className="form-control" name="message" id="message-contact-1" rows="5" placeholder="Your Message"></textarea>
+            <label for="message-contact-1">Message</label>
+        </div>
+        <input type="submit" className="btn pull-right" value="Send Message"></input>
+
+        {/* <!-- Ajax Message --> */}
+        <div className="ajax-message col-md-12 no-gap"></div>
+ 
+    </form>
+</div>}
