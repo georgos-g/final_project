@@ -63,13 +63,14 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 });
 //style on drag
 const getListStyle = (isDraggingOver) => ({
-    background: isDraggingOver ? "rgba(255, 255, 255, 0.2)" : "#161616",
+    background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
+    minHeight: 300,
     //display: 'flex',
     // padding: grid,
     // width: "100%",
-    // flexDirection: "row",
-    // flexWrap: "wrap",
-    // justifyContent: "center",
+    //flexDirection: "row",
+    //flexWrap: "wrap",
+    //justifyContent: "center",
 
 });
 
@@ -83,7 +84,7 @@ const getListStyleSecond = (isDraggingOver) => ({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    minHeight: 200,
+    minHeight: 220,
     backgroundImage: "url('./assets/images/bg3.jpg')",
     backgroundSize: 'cover',
     backgroundPosition: '50%',
@@ -101,43 +102,83 @@ class App extends Component {
             items: [
                 {
                     name: "HOVER BOARD SHOW",
-                    img: "./assets/images/portfolio/projekt9.jpg",
-                    link:
-                        "https://event-entertainment.eu/portfolio/hoverboard-showact/",
+                    img: "./static/hoverboard-show-act-02-650x365.jpg",
+                    link:"https://event-entertainment.eu/language/en/portfolio/hoverboard-show-act/",
                     filter: "hitech",
-                    classSt: "portfolio-item",
+                    info: "Casual and cool. At the pulse of time",
+                },
+                {
+                    name: "LED DRONE SHOW",
+                    img: "./static/drone-show-02-650x365.jpg",
+                    link:"https://event-entertainment.eu/language/en/portfolio/led_drone_show_act/",
+                    filter: "hitech",
+                    info: "An absolutely unique LED Drone Showact",
+                },
+                
+                {
+                    name: "LASER DANCE PERFORMANCE",
+                    img: "./static/laser-dance-performance-650x365.jpg",
+                    link:"https://event-entertainment.eu/language/en/portfolio/laser-dance-performance/",
+                    filter: "hitech",
+                    info: "choreography of light and movement",
+                },
+               
+                {
+                    name: "HOLOGRAPHIC PERFORMANCE",
+                    img: "./static/holographic-performance2-650x365.jpg",
+                    link:"https://event-entertainment.eu/language/en/portfolio/holographic-performance/",
+                    filter: "hitech",
+                    info: "“materialize” everything that comes up with imagination ",
                 },
 
                 {
-                    name: "Show 1",
-                    img: "./assets/images/portfolio/projekt1.jpg",
+                    name: "LED SHOW ACT",
+                    img: "./static/led-bmx-showact1-650x365.jpg",
+                    link:"https://event-entertainment.eu/language/en/portfolio/led-show-act/",
                     filter: "hitech",
-                    classSt: "portfolio-item",
+                    info: "High tech LED costumes, high tech LED requisite ",
                 },
+
                 {
-                    name: "Show 2",
-                    img: "./assets/images/portfolio/Projekt2.jpg",
+                    name: "PROJECTION MAPPING SHOW ACT",
+                    img: "./static/projection-mapping2-650x365.jpg",
+                    link:"https://event-entertainment.eu/language/en/portfolio/projection-mapping-show-act/",
                     filter: "hitech",
-                    classSt: "portfolio-item",
+                    info: "2D- or 3D objects turn into a video display",
                 },
+
                 {
-                    name: "Show 3",
-                    img: "./assets/images/portfolio/projekt3.jpg",
-                    filter: "funny",
-                    classSt: "portfolio-item",
+                    name: "AERIAL STRAPS SHOW ACT",
+                    img: "./static/aerial-straps-showact-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/aerial-straps-show-act/",
+                    filter: "aerial",
+                    info: "breathtaking acrobatics at the highest stage",
                 },
+
                 {
-                    name: "Show 4",
-                    img: "./assets/images/portfolio/projekt4.jpg",
-                    filter: "funny",
-                    classSt: "portfolio-item",
+                    name: "VERTICAL DANCE SHOW ACT",
+                    img: "./static/vertical-dance-showact-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/vertical-dance-show-act/",
+                    filter: "aerial",
+                    info: "A wall bekomes a stage",
                 },
+
                 {
-                    name: "Show 5",
-                    img: "./assets/images/portfolio/Projekt_5.jpg",
-                    filter: "funny",
-                    classSt: "portfolio-item",
+                    name: "AERIAL CHANDELIER SHOW ACT",
+                    img: "./static/aerial-chandelier-showact-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/aerial-chandelier-show-act/",
+                    filter: "aerial",
+                    info: "an oversized chandelier, 2000 sparkling crystals, and high-class acrobatics",
                 },
+
+                {
+                    name: "ACROBATIC TANGO BALLET",
+                    img: "./static/acrobatic-tango-ballet-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/acrobatic-tango-ballet/",
+                    filter: "dance",
+                    info: "ballet and acrobatics combined “Adagio” on the ground and in the air",
+                },
+               
             ],
 
             selected: getItems(),
@@ -202,73 +243,77 @@ class App extends Component {
                 <Droppable droppableId="droppable" direction="horizontal">
                     {(provided, snapshot) => (
                         //kasten-----------------------------------------------
-                        <div
+                        <div className=""
                             ref={provided.innerRef}
                             style={getListStyle(snapshot.isDraggingOver)}
                         >
                             {/* ================== Portfolio Filter ==================  */}
-                            <div></div>
+                            
                             <div className="row">
                                 <ul id="pfolio-filters" className="portfolio-filters">
                                     <li className="active"><a href="#" data-filter="*">All</a></li>
                                     <li><a href="#" data-filter=".hitech">Hitech</a></li>
-                                    <li><a href="#" data-filter=".funny">Funny</a></li>
+                                    <li><a href="#" data-filter=".aerial">Aerial</a></li>
+                                    <li><a href="#" data-filter=".dance">Dance</a></li>
+                                    <li><a href="#" data-filter=".music">Music</a></li>
+                                    <li><a href="#" data-filter=".special">Special</a></li>
+                                    <li><a href="#" data-filter=".variete">Variete</a></li>
         
                                 </ul>
                             </div>
-                            
-                            <div id='pfolio'>
+                            <div className="row">
+                                <div id='pfolio'>
 
 
-                                {this.state.items.map(
-                                    ({ name, img, link, filter, classSt }, index) => (
-                                        <Draggable
-                                            key={name}
-                                            draggableId={name}
-                                            index={index}
-                                            link={link}
-                                            filter={filter}
-                                            classSt={classSt}
-                                        >
-                                            {(provided, snapshot) => (
-                                            // Show module draggable
-                                                <div
-                                                    className="show_module"
-                                                    ref={provided.innerRef}
-                                                    {...provided.draggableProps}
-                                                    {...provided.dragHandleProps}
-                                                    style={getItemStyle(
-                                                        snapshot.isDragging,
-                                                        provided.draggableProps
-                                                            .style
-                                                    )}
-                                                >
-                                                    {/* <div className="show_module_img-txt"> */}
-                                                    <div className={"portfolio-item " + filter}>
-                                                        <div className="show_module_img-txt"> 
-                                                        
-                                                            {/* <div className="portfolio-item hover-bottom show_module_img-txt"> */}
-                                                            {/* {item.content} */}
-                                                            <img src={img}></img>
-                                                            {name}
-
-                                                            <button className="btn-small btn-ghost-light">
-                                                                <a href={link} onClick={link}>MORE</a>
-                                                            </button>
-
-                                                            <div className="show_module_description">
-                                                                {/* {link} */}
+                                    {this.state.items.map(
+                                        ({ name, img, link, filter, info }, index) => (
+                                            <Draggable
+                                                key={name}
+                                                draggableId={name}
+                                                index={index}
+                                                link={link}
+                                                filter={filter}
+                                                info={info}
+                                            >
+                                                {(provided, snapshot) => (
+                                                    // Show module draggable
+                                                    <div
+                                                        className="show_module"
+                                                        ref={provided.innerRef}
+                                                        {...provided.draggableProps}
+                                                        {...provided.dragHandleProps}
+                                                        style={getItemStyle(
+                                                            snapshot.isDragging,
+                                                            provided.draggableProps
+                                                                .style
+                                                        )}
+                                                    >
+                                                        {/* === Portfolio Items === */}
+                                                        <div className={"portfolio-item " + filter}>
+                                                            <div className="show_module_img-txt"> 
+                                                                <div className="p-wrapper hover-default">
+                                                                    <img className="responsive" src={img} alt={name}></img>
+                                                                    <div className="p-hover">
+                                                                        <div className="p-content">
+                                                                            <h4>{name}</h4>
+                                                                            <h6 className="subheading">{info}</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href={link} className="open-btn"><i className="fa fa-expand"></i></a>
+                                                                </div>
                                                             </div>
                                                         </div>
+
                                                     </div>
-                                                </div>
-                                            )}
-                                        </Draggable>
-                                    )
-                                )}
-                                {provided.placeholder}
-                            </div>
-                            {/* //pfolio */}
+                                                )}
+                                            </Draggable>
+                                        )
+                                    )}
+                                    {provided.placeholder}
+                                </div>{/* //pfolio */}
+                                
+                            </div>{/* //row */}
+                                
                         </div>
 
                     )}
@@ -297,7 +342,7 @@ class App extends Component {
                                         {(provided, snapshot) => (
                                             //Show module dragged
                                             <div
-                                                className="show_module"
+                                                className="show_module_second"
                                                 ref={provided.innerRef}
                                                 {...provided.draggableProps}
                                                 {...provided.dragHandleProps}
@@ -308,11 +353,11 @@ class App extends Component {
                                                 )}
                                             >
                                                 
-                                                <div className="show_module_img-txt">
-                                                    {/* {item.content} */}
+                                                <div className="show_module_img-txt_second">
                                                     <img src={img}></img>
+                                                    
                                                     {name}
-                                                    {/* {link} */}
+                                                    
                                                 </div>
                                             </div>
                                         )}

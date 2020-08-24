@@ -7,11 +7,11 @@
     /* justify-content: center; */
     text-align: center;
     margin: 10px;
-    background: #5e6155;
+    /* background: #5e6155; */
     /* justify-content: space-between; */
     }
 
-
+/* TopPosition */
 .show_module {
     display: flex;
     flex-direction: row;
@@ -19,18 +19,53 @@
     justify-content: center;
  
 }
+
+.responsive {
+    min-width: 400px;
+    height: auto;
+  }
+
 .show_module img {
     width: 400px;
     height: 200px;
     object-fit: cover;
 }
 .show_module_img-txt {
-    display: block;
-    top: -50px;
+   display: block;
+    top: 50px;
     width: 400px;
-    height: 220px;
+    height: 220px; 
   
 }
+
+/* DownPosition */
+.show_module_second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 304px;
+    height: 180px; 
+ 
+
+}
+.show_module_second img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+.show_module_img-txt_second {
+    margin: 5px;
+   display: block;
+    bottom: 10px;
+    width: 300px;
+    height: 150px; 
+}
+element.style {
+    background-color:#272727 ;
+}
+
+
 
 .show_module_description{
 
@@ -47,38 +82,55 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/* 
-.show_module_dragged img {
-    width: 200px;
-    height: 100px;
-    object-fit: cover;
-}
-.show_module_img-txt {
-    display: block;
-    width: 200px;
-    height: 110px;
-  
-} */
 
-.button {
-    background-color: transparent;
-    border: 1px solid gray;
-    border-radius: 1px;
-    box-sizing: border-box;
-    color: #ececec;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Montserrat,"Open Sans","Helvetica Neue",Helvetica,sans-serif;
-    font-size: .8em;
-    font-weight: 300;
-    letter-spacing: 2.5px;
-    line-height: 1.8em;
-    list-style: outside none none;
-    overflow: hidden;
-    padding: 5px 12px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all .5s;
-    z-index: 1;
-  }
+
+
+
+  .gg {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    
+    #pfolio {
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        
+       
+        
+        
+
+
+       
+        
+     
+      }
+      .portfolio-item{
+       
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      h6.subheading {
+        
+        font-size: 16px;
+        font-weight: 300;
+        
+      }
+      a.open-btn {
+        
+        font-size: 15px;
+        font-weight: 300;
+        height: 40px;
+        padding-top: 22px;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        transition: all .5s;
+        width: 40px;
+      }
+
+      .element.style{
+
+      }
