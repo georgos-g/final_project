@@ -338,6 +338,7 @@ class App extends Component {
                                         key={name}
                                         draggableId={name}
                                         index={index}
+                                        link={link}
                                     >
                                         {(provided, snapshot) => (
                                             //Show module dragged
@@ -355,7 +356,6 @@ class App extends Component {
                                                 
                                                 <div className="show_module_img-txt_second">
                                                     <img src={img}></img>
-                                                    
                                                     {name}
                                                     
                                                 </div>
