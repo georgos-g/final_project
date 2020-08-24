@@ -78,6 +78,7 @@ const getListStyleSecond = (isDraggingOver) => ({
     paddingTop: 10,
     paddingBottom: 10,
     //background: isDraggingOver ? "lightblue" : "transparent",
+    background: isDraggingOver ? "" : "",
     display: 'flex',
     //padding: grid,
     width: "100%",
@@ -178,7 +179,100 @@ class App extends Component {
                     filter: "dance",
                     info: "ballet and acrobatics combined “Adagio” on the ground and in the air",
                 },
-               
+
+                {
+                    name: "ACROBATIC DANCE DUET",
+                    img: "./static/acrobatic-dance-duet-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/acrobatic-dance-duet/",
+                    filter: "dance",
+                    info: "The highest art of acrobatics, dance, and gymnastics come together",
+                },
+
+                {
+                    name: "STREET DANCE CHAMPIONS",
+                    img: "./static/street-dance-champions-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/street-dance-champions/",
+                    filter: "dance",
+                    info: "Gifted dancers, spectacular hip-hop, the winners of the hip-hop World Championship",
+                },
+
+                {
+                    name: "BODYPERCUSSION",
+                    img: "./static/bodypercussion-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/bodypercussion/",
+                    filter: "dance",
+                    info: "The instruments: the own body and the simplest requisites",
+                },
+
+                {
+                    name: "MUSICAL STAR SINGERS",
+                    img: "./static/musical-star-singer-8-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/musical-star-singers/",
+                    filter: "music",
+                    info: "Voices that go under the skin, Singers from well-known musical theater productions",
+                },
+                
+                {
+                    name: "A CAPELLA BEATBOX SINGER",
+                    img: "./static/acapella_group_00-e1496228761814-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/a-capella-band/",
+                    filter: "music",
+                    info: "Live and without instruments – but still a whole orchestra performs",
+                },
+
+                {
+                    name: "CLASSICAL ENSEMBLE",
+                    img: "./static/klassik-ensemble-03-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/classical-ensemble/",
+                    filter: "music",
+                    info: "your company accompanied live by members of a symphony orchestra",
+                },
+
+                {
+                    name: "BMX WORLD CHAMPION FLATLAND",
+                    img: "./static/bmx-weltmeister-flatland-05-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/bmx-world-champion/",
+                    filter: "special",
+                    info: " the rider and his bike melt to a unit of dynamic, speed, and acrobatics ",
+                },
+
+                {
+                    name: "THE MOVER WALKING ACT",
+                    img: "./static/the-movers-walking-act-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/the-mover-walking-act-2/",
+                    filter: "special",
+                    info: "Like marionettes without strings. They illustrate and initiate, interact and inform",
+                },
+
+                {
+                    name: "DANCING HORSES SHOW ACT",
+                    img: "./static/tanzende-pferde-showact-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/dancing-horses/",
+                    filter: "special",
+                    info: "The award winning artists enchant the spectators with their mixture of powerful ride and dancing",
+                },
+
+                {
+                    name: "LED PYRO KITES",
+                    img: "./static/led-pyro-kites-showact-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/led-pyro-kites/",
+                    filter: "special",
+                    info: "Open up or end your event with a scenario in the firmament that is just as unique as simple",
+                },
+
+                {
+                    name: "CUBE SHOW ACT",
+                    img: "./static/cube-showact-05-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/cube-show-act/",
+                    filter: "variete",
+                    info: "The impressive Jonglange with the cube made of chrome and steel: “force equals mass times acceleration”",
+                },
+
+
+
+
+                
+
             ],
 
             selected: getItems(),
