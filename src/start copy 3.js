@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-//import AppModule from "./AppModule.js";
-//import AppModulSingle from "./AppModulSingle.js";
-//import ShowModule from "./ShowModule.js";
-
-
+import AppModule from "./AppModule.js";
+import AppModulSingle from "./AppModulSingle.js";
+import ShowModule from "./ShowModule.js";
 
 // fake data generator
 
