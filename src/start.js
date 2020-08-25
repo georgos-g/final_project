@@ -107,6 +107,8 @@ class App extends Component {
                     link:"https://event-entertainment.eu/language/en/portfolio/hoverboard-show-act/",
                     filter: "hitech",
                     info: "Casual and cool. At the pulse of time",
+                    video: "331934243",
+                    details: "max 5min | 8x4m | gala/show ",
                 },
                 {
                     name: "LED DRONE SHOW",
@@ -114,6 +116,8 @@ class App extends Component {
                     link:"https://event-entertainment.eu/language/en/portfolio/led_drone_show_act/",
                     filter: "hitech",
                     info: "An absolutely unique LED Drone Showact",
+                    video: "267222163",
+                    details: "max 10min | 12x4m | highlight act ",
                 },
                 
                 {
@@ -122,6 +126,8 @@ class App extends Component {
                     link:"https://event-entertainment.eu/language/en/portfolio/laser-dance-performance/",
                     filter: "hitech",
                     info: "choreography of light and movement",
+                    video: "116750941",
+                    details: "max 5min | 8x4m | gala/show ",
                 },
                
                 {
@@ -130,6 +136,8 @@ class App extends Component {
                     link:"https://event-entertainment.eu/language/en/portfolio/holographic-performance/",
                     filter: "hitech",
                     info: "“materialize” everything that comes up with imagination ",
+                    video: "116053237",
+                    details: "max 10min | 8x6m | highlight act ",
                 },
 
                 {
@@ -138,6 +146,8 @@ class App extends Component {
                     link:"https://event-entertainment.eu/language/en/portfolio/led-show-act/",
                     filter: "hitech",
                     info: "High tech LED costumes, high tech LED requisite ",
+                    video: "107921842",
+                    details: "max 8min | 6x4m | gala/show ",
                 },
 
                 {
@@ -146,6 +156,8 @@ class App extends Component {
                     link:"https://event-entertainment.eu/language/en/portfolio/projection-mapping-show-act/",
                     filter: "hitech",
                     info: "2D- or 3D objects turn into a video display",
+                    video: "107048760",
+                    details: "max 8min | 6x4m | gala/show ",
                 },
 
                 {
@@ -154,6 +166,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/aerial-straps-show-act/",
                     filter: "aerial",
                     info: "breathtaking acrobatics at the highest stage",
+                    video: "116738569",
+                    details: "max 5min | 4x4m | gala/show ",
                 },
 
                 {
@@ -162,6 +176,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/vertical-dance-show-act/",
                     filter: "aerial",
                     info: "A wall bekomes a stage",
+                    video: "116739608",
+                    details: "max 6min | wall 8x20m | highlight act ",
                 },
 
                 {
@@ -170,6 +186,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/aerial-chandelier-show-act/",
                     filter: "aerial",
                     info: "an oversized chandelier, 2000 sparkling crystals, and high-class acrobatics",
+                    video: "119430517",
+                    details: "max 6min | 2x2m | gala/show ",
                 },
 
                 {
@@ -178,6 +196,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/acrobatic-tango-ballet/",
                     filter: "dance",
                     info: "ballet and acrobatics combined “Adagio” on the ground and in the air",
+                    video: "119430517",
+                    details: "max 5min | 4x4m | gala/show ",
                 },
 
                 {
@@ -186,6 +206,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/acrobatic-dance-duet/",
                     filter: "dance",
                     info: "The highest art of acrobatics, dance, and gymnastics come together",
+                    video: "119430517",
+                    details: "max 5min | 4x4m | gala/show ",
                 },
 
                 {
@@ -194,6 +216,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/street-dance-champions/",
                     filter: "dance",
                     info: "Gifted dancers, spectacular hip-hop, the winners of the hip-hop World Championship",
+                    video: "120694062",
+                    details: "max 10min | 6x4m | gala/show ",
                 },
 
                 {
@@ -202,6 +226,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/bodypercussion/",
                     filter: "dance",
                     info: "The instruments: the own body and the simplest requisites",
+                    video: "117275535",
+                    details: "max 8min | 4x4m | gala/show ",
                 },
 
                 {
@@ -210,6 +236,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/musical-star-singers/",
                     filter: "music",
                     info: "Voices that go under the skin, Singers from well-known musical theater productions",
+                    video: "118121682",
+                    details: "max 45min | 6x3m | gala/show ",
                 },
                 
                 {
@@ -218,6 +246,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/a-capella-band/",
                     filter: "music",
                     info: "Live and without instruments – but still a whole orchestra performs",
+                    video: "117475280",
+                    details: "max 45min | 8x3m | gala/show ",
                 },
 
                 {
@@ -226,6 +256,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/classical-ensemble/",
                     filter: "music",
                     info: "your company accompanied live by members of a symphony orchestra",
+                    video: "170281136",
+                    details: "max 45min | 3x4m | gala/show ",
                 },
 
                 {
@@ -234,6 +266,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/bmx-world-champion/",
                     filter: "special",
                     info: " the rider and his bike melt to a unit of dynamic, speed, and acrobatics ",
+                    video: "120468132",
+                    details: "max 10min | 6x6m | gala/show ",
                 },
 
                 {
@@ -242,6 +276,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/the-mover-walking-act-2/",
                     filter: "special",
                     info: "Like marionettes without strings. They illustrate and initiate, interact and inform",
+                    video: "119330265",
+                    details: "max 10min | 10x2m | walking act ",
                 },
 
                 {
@@ -250,6 +286,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/dancing-horses/",
                     filter: "special",
                     info: "The award winning artists enchant the spectators with their mixture of powerful ride and dancing",
+                    video: "121893940",
+                    details: "max 15min | 15x20m | highlight act",
                 },
 
                 {
@@ -258,6 +296,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/led-pyro-kites/",
                     filter: "special",
                     info: "Open up or end your event with a scenario in the firmament that is just as unique as simple",
+                    video: "121688548",
+                    details: "max 15min | 70x30m | highlight act  ",
                 },
 
                 {
@@ -266,6 +306,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/cube-show-act/",
                     filter: "variete",
                     info: "An impressive Jonglange with the cube made of chrome and steel: “force equals mass times acceleration”",
+                    video: "119452887",
+                    details: "max 5min | 5x5m | gala/show ",
                 },
 
                 {
@@ -274,6 +316,8 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/handstand-show-act/",
                     filter: "variete",
                     info: "Two hands, one body, a thousand figures. A combination of Handstand-Acrobatics, contortion and dance",
+                    video: "121891303",
+                    details: "max 5min | 3x3m | gala/show ",
                 },
 
                 {
@@ -282,6 +326,9 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/handvoltige-show-act/",
                     filter: "variete",
                     info: "Up to ten performers whirl across the stage creating moments of breathless suspense",
+                    video: "119525075",
+                    details: "max 9min | 10x4m | gala/show ",
+                    
                 },
 
                 {
@@ -290,18 +337,9 @@ class App extends Component {
                     link: "https://event-entertainment.eu/language/en/portfolio/cyr-wheel-show-act/",
                     filter: "variete",
                     info: "the Cyr Wheel is a 360° universe of its own, where impressive pictures are created in its orbit.",
+                    video: "110474457",
+                    details: "max 5min | 4x6m | gala/show ",
                 },
-
-
-
-
-
-
-
-
-
-                
-
             ],
 
             selected: getItems(),
@@ -373,74 +411,85 @@ class App extends Component {
                             style={getListStyle(snapshot.isDraggingOver)}
                         >
                             {/* ================== Portfolio Filter ==================  */}
-                            
-                            <div className="row">
-                                <ul id="pfolio-filters" className="portfolio-filters">
-                                    <li className="active"><a href="#" data-filter="*">All</a></li>
-                                    <li><a href="#" data-filter=".hitech">Hitech</a></li>
-                                    <li><a href="#" data-filter=".aerial">Aerial</a></li>
-                                    <li><a href="#" data-filter=".dance">Dance</a></li>
-                                    <li><a href="#" data-filter=".music">Music</a></li>
-                                    <li><a href="#" data-filter=".special">Special</a></li>
-                                    <li><a href="#" data-filter=".variete">Variete</a></li>
+                            <section id="react" className="container-fluid portfolio-layout portfolio-columns-fw">
+                                <div className="row">
+                                    <header className="sec-heading">
+                                        <h2>Create your Production</h2>
+                                        <span className="subheading">drag and drop the show acts to the aeria below</span>
+                                    </header>
+                                </div>
+                                <div className="row">
+                                    <ul id="pfolio-filters" className="portfolio-filters">
+                                        <li className="active"><a href="#" data-filter="*">All</a></li>
+                                        <li><a href="#" data-filter=".hitech">Hitech</a></li>
+                                        <li><a href="#" data-filter=".aerial">Aerial</a></li>
+                                        <li><a href="#" data-filter=".dance">Dance</a></li>
+                                        <li><a href="#" data-filter=".music">Music</a></li>
+                                        <li><a href="#" data-filter=".special">Special</a></li>
+                                        <li><a href="#" data-filter=".variete">Variete</a></li>
+                                    
 
         
-                                </ul>
-                            </div>
-                            <div className="row">
-                                <div id='pfolio'>
+                                    </ul>
+                                </div>
+                                <div className="row">
+                                    <div id='pfolio'>
+                                  
 
-
-                                    {this.state.items.map(
-                                        ({ name, img, link, filter, info }, index) => (
-                                            <Draggable
-                                                key={name}
-                                                draggableId={name}
-                                                index={index}
-                                                link={link}
-                                                filter={filter}
-                                                info={info}
-                                            >
-                                                {(provided, snapshot) => (
+                                        {this.state.items.map(
+                                            ({ name, img, link, filter, info }, index) => (
+                                                <Draggable
+                                                    key={name}
+                                                    draggableId={name}
+                                                    index={index}
+                                                    link={link}
+                                                    filter={filter}
+                                                    info={info}
+                                                >
+                                                    {(provided, snapshot) => (
                                                     // Show module draggable
-                                                    <div
-                                                        className="show_module"
-                                                        ref={provided.innerRef}
-                                                        {...provided.draggableProps}
-                                                        {...provided.dragHandleProps}
-                                                        style={getItemStyle(
-                                                            snapshot.isDragging,
-                                                            provided.draggableProps
-                                                                .style
-                                                        )}
-                                                    >
-                                                        {/* === Portfolio Items === */}
-                                                        <div className={"portfolio-item " + filter}>
-                                                            <div className="show_module_img-txt"> 
-                                                                <div className="p-wrapper hover-default">
-                                                                    <img className="responsive" src={img} alt={name}></img>
-                                                                    <div className="p-hover">
-                                                                        <div className="p-content">
-                                                                            <h4>{name}</h4>
-                                                                            <h6 className="subheading">{info}</h6>
+                                                        <div
+                                                            className="show_module"
+                                                            ref={provided.innerRef}
+                                                            {...provided.draggableProps}
+                                                            {...provided.dragHandleProps}
+                                                            style={getItemStyle(
+                                                                snapshot.isDragging,
+                                                                provided.draggableProps
+                                                                    .style
+                                                            )}
+                                                        >
+                                                            {/* === Portfolio Items === */}
+                                                            <div className={"portfolio-item " + filter}>
+                                                                <div className="show_module_img-txt"> 
+                                                                    <div className="p-wrapper hover-default">
+                                                                        <img className="responsive" src={img} alt={name}></img>
+                                                                        <div className="p-hover">
+                                                                            <div className="p-content">
+                                                                                <h4>{name}</h4>
+                                                                                <h6 className="subheading">{info}</h6>
+                                                                            </div>
                                                                         </div>
+                                                                        <a href={link} className="open-btn"><i className="fa fa-expand"></i></a>
                                                                     </div>
-                                                                    <a href={link} className="open-btn"><i className="fa fa-expand"></i></a>
                                                                 </div>
                                                             </div>
-                                                        </div>
 
-                                                    </div>
-                                                )}
-                                            </Draggable>
-                                        )
-                                    )}
-                                    {provided.placeholder}
-                                </div>{/* //pfolio */}
+                                                        </div>
+                                                    )}
+                                                </Draggable>
+                                            )
+                                        )}
+                                        {provided.placeholder}
+                                    </div>{/* //pfolio */}
+
+
+                                </div>{/* //row */}
                                 
-                            </div>{/* //row */}
+                            
                                 
-                        </div>
+                            </section>
+                        </div>//kasten 
 
                     )}
                 </Droppable>
@@ -448,7 +497,7 @@ class App extends Component {
                 <div>
                    
                     <header className="sec-heading section-30-0">
-                        <span className="subheading">drop the show moduls here</span>
+                        <span className="subheading">drop the modules here</span>
                     </header>
                 </div>
                 <Droppable droppableId="droppable2" direction="horizontal">
@@ -459,12 +508,15 @@ class App extends Component {
                         >
                      
                             {this.state.selected.map(
-                                ({ name, img, link }, index) => (
+                                ({ name, img, link, filter, details, video  }, index) => (
                                     <Draggable
                                         key={name}
                                         draggableId={name}
                                         index={index}
                                         link={link}
+                                        filter={filter}
+                                        info={details}
+                                        video={video}
                                     >
                                         {(provided, snapshot) => (
                                             //Show module dragged
@@ -481,8 +533,15 @@ class App extends Component {
                                             >
                                                 
                                                 <div className="show_module_img-txt_second">
-                                                    <img src={img}></img>
-                                                    {name}
+                                                    <div>
+                                                        <img src={img}></img>
+                                                        {name} <br /> {filter} {'| '}{details}
+                                                    </div>
+                                                    
+                                                    <div className="video-react">
+                                                        <p><a href={"https://vimeo.com/"+video+"?autoplay=1"}
+                                                            className="popup-vimeo btn-small btn-ghost-light">Video</a></p>                                
+                                                    </div>
                                                     
                                                 </div>
                                             </div>
@@ -492,8 +551,11 @@ class App extends Component {
                             )}
 
                             
-                            {/* {console.log("Selected", this.state.selected)} */}
+                            
                             { console.log('SELECTED ITEMS', JSON.stringify(this.state.selected))}
+                            {/* {this.state.selected.map({ name, filter, link })}
+                            { console.log('SELECTED ITEMS TO SEND', JSON.stringify(this.state.selected.map({ name, filter, link })))} */}
+                            
 
                             {provided.placeholder}
                             <div></div>
@@ -526,7 +588,7 @@ class App extends Component {
                                             name="name"
                                             id="name-contact-1"
                                             className="form-control validate-locally"
-                                            placeholder="Enter your name"
+                                            placeholder="Enter your Name"
                                         ></input>
                                         <label htmlFor="name-contact-1">
                                             Name
@@ -563,8 +625,8 @@ class App extends Component {
                                             name="message"
                                             id="message-contact-1"
                                             rows="5"
-                                            placeholder={JSON.stringify(this.state.selected, null, 1)}
-                                            
+                                            // placeholder={JSON.stringify(this.state.selected, null, 1)}
+                                            value={JSON.stringify(this.state.selected, null, 1)}
                                            
                                             
                                             // "Your Message"
@@ -592,6 +654,6 @@ class App extends Component {
         );
     }
 }
-console.log("GG 14:06");
+console.log("GG 15:29");
 // Put the things into the DOM!
 ReactDOM.render(<App />, document.getElementById("react"));

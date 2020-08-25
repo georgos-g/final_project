@@ -1,6 +1,4 @@
-
- #root {
-    
+#root {
     /* display: flex; */
     /* flex-direction: column;
     flex-wrap: wrap;  */
@@ -9,21 +7,20 @@
     margin: 10px;
     /* background: #5e6155; */
     /* justify-content: space-between; */
-    }
+}
 
-/* TopPosition */
+/* Position */
 .show_module {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
- 
 }
 
 .responsive {
     min-width: 400px;
     height: auto;
-  }
+}
 
 .show_module img {
     width: 400px;
@@ -31,49 +28,53 @@
     object-fit: cover;
 }
 .show_module_img-txt {
-   display: block;
+    display: block;
     top: 50px;
     width: 400px;
-    height: 220px; 
-  
+    height: 220px;
 }
 
-/* DownPosition */
+/* Position Dragged */
 .show_module_second {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1px;
+    padding-right: 4px;
+    padding-left: 4px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 304px;
-    height: 180px; 
- 
-
+    height: 196px;
+    background-color: rgba(0, 0, 0, 0.6) !important;
 }
 .show_module_second img {
-    width: 300px;
-    height: 150px;
+    width: 296px;
+    height: 146px;
     object-fit: cover;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 .show_module_img-txt_second {
-    margin: 5px;
-   display: block;
-    bottom: 10px;
+    position: relative;
+    padding-right: 4px;
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 13px;
+
+    display: block;
+    bottom: 1px;
     width: 300px;
-    height: 150px; 
+    height: 150px;
 }
 element.style {
-    background-color:#272727 ;
+    background-color: #272727;
 }
 
-
-
-.show_module_description{
-
-
+.show_module_description {
 }
 
-.not_visible{
-   /* display:none; */
+.not_visible {
+    display: none;
 }
 
 .center_row {
@@ -83,54 +84,84 @@ element.style {
     justify-content: center;
 }
 
+.gg {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
+#pfolio {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: auto;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #pfolio {
+    width: 600px;
+    margin: auto;
+}
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #pfolio {
+    width: 400px;
+    margin: auto;
+}
+}
 
-  .gg {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #pfolio {
+    width: 800px;
+    margin: auto;
+}
+}
 
-    
-    #pfolio {
-        clear: both;
-        display: flex;
-        flex-direction: row;
-        
-       
-        
-        
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #pfolio {
+    width: 800px;
+    margin: auto;
+}
+}
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #pfolio {
+    width: 1200px;
+    margin: auto;
+}
+}
 
-       
-        
-     
-      }
-      .portfolio-item{
-       
-        display: flex;
-        flex-direction: row;
-        
-      }
+.portfolio-item {
+    display: flex;
+    flex-direction: row;
+}
 
-      h6.subheading {
-        
-        font-size: 16px;
-        font-weight: 300;
-        
-      }
-      a.open-btn {
-        
-        font-size: 15px;
-        font-weight: 300;
-        height: 40px;
-        padding-top: 22px;
-        position: absolute;
-        right: 0;
-        top: -40px;
-        transition: all .5s;
-        width: 40px;
-      }
+h6.subheading {
+    font-size: 16px;
+    font-weight: 300;
+}
 
-      .element.style{
+a.open-btn {
+    background-color: rgba(92, 92, 92, 0.7) !important;
+    font-size: 15px;
+    font-weight: 300;
+    height: 40px;
+    padding-top: 22px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transition: all 0.5s;
+    width: 40px;
+}
 
-      }
+.video-react {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+   
+}
