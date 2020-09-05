@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-//import AppModule from "./AppModule.js";
-//import AppModulSingle from "./AppModulSingle.js";
-//import ShowModule from "./ShowModule.js";
-
+import ModalVideo from 'react-modal-video';
 
 
 // fake data generator
@@ -66,32 +63,33 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 //style on drag
 const getListStyle = (isDraggingOver) => ({
     background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
-    minHeight: 300,
-    //display: 'flex',
+    minHeight: 480,
+    // display: 'flex',
     // padding: grid,
-    // width: "100%",
-    //flexDirection: "row",
-    //flexWrap: "wrap",
-    //justifyContent: "center",
+    // width: 1600,
+    // flexDirection: "row",
+    // flexWrap: "wrap",
+    // justifyContent: "center",
 
 });
 
 const getListStyleSecond = (isDraggingOver) => ({
     paddingTop: 10,
     paddingBottom: 10,
-    //background: isDraggingOver ? "lightblue" : "transparent",
-    background: isDraggingOver ? "" : "",
+    background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.3)",
+    //background: isDraggingOver ? "" : "",
     display: 'flex',
-    //padding: grid,
+    
     width: "100%",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
     minHeight: 220,
-    backgroundImage: "url('./assets/images/bg3.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: '50%',
-    backgroundAttachment: 'fixed',
+    //img bg----
+    // backgroundImage: "url('./assets/images/bg3.jpg')",
+    // backgroundSize: 'cover',
+    // backgroundPosition: '50%',
+    // backgroundAttachment: 'fixed',
 
 });
 
@@ -100,6 +98,9 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
+
+            isOpen: false, //ModalVideo---------------------
+
             // items: getItems(10),
             // selected: getItems(1, 2),
             items: [
@@ -346,6 +347,8 @@ class App extends Component {
 
             selected: getItems(),
         };
+        //Modal Video--------------------------------
+        this.openModal = this.openModal.bind(this);
 
         /**
          * A semi-generic way to handle multiple lists. Matches
@@ -355,8 +358,14 @@ class App extends Component {
         this.id2List = {
             droppable: "items",
             droppable2: "selected",
+
+            
         };
+        
+
     }
+
+    
 
     getList(id) {
         return this.state[this.id2List[id]];
@@ -398,6 +407,12 @@ class App extends Component {
         }
     }
 
+    //ModalVideo---------------------------------------------------
+    openModal () {
+        this.setState({ isOpen: true });
+    }
+
+    
     // Normally you would want to split things out into separate components.
     // But in this example everything is just done in one place for simplicity
     render() {
@@ -417,7 +432,7 @@ class App extends Component {
                                 <div className="row">
                                     <header className="sec-heading">
                                         <h2>Create your Production</h2>
-                                        <span className="subheading">drag and drop the show acts to the aeria below</span>
+                                        <span className="subheading">drag and drop the show acts to the AREA below</span>
                                     </header>
                                 </div>
                                 <div className="row">
@@ -428,7 +443,7 @@ class App extends Component {
                                         <li><a href="#" data-filter=".dance">Dance</a></li>
                                         <li><a href="#" data-filter=".music">Music</a></li>
                                         <li><a href="#" data-filter=".special">Special</a></li>
-                                        <li><a href="#" data-filter=".variete">Variete</a></li>
+                                        <li><a href="#" data-filter=".variete">Varieté </a></li>
                                     
 
         
@@ -462,6 +477,7 @@ class App extends Component {
                                                             )}
                                                         >
                                                             {/* === Portfolio Items === */}
+                                                            {/* <div className={"portfolio-item " + filter}> */}
                                                             <div className={"portfolio-item " + filter}>
                                                                 <div className="show_module_img-txt"> 
                                                                     <div className="p-wrapper hover-default">
@@ -521,6 +537,10 @@ class App extends Component {
                                         video={video}
                                     >
                                         {(provided, snapshot) => (
+
+                                           
+                                            
+                                            
                                             //Show module dragged
                                             <div
                                                 className="show_module_second"
@@ -533,20 +553,34 @@ class App extends Component {
                                                         .style
                                                 )}
                                             >
-                                                
+                                                 
                                                 <div className="show_module_img-txt_second">
                                                     <div>
                                                         <img src={img}></img>
                                                         {name} <br /> {filter} {'| '}{details}
                                                     </div>
-                                                    
-                                                    <div className="video-react">
-                                                        <p><a href={"https://vimeo.com/"+video+"?autoplay=1"}
-                                                            className="popup-vimeo btn-small btn-ghost-light">Video</a></p>                                
+                                                    {/* Modal Video------------------------------------ */}
+                                                    <div className="video-react-button">
+                                                        {this.state.isOpen==video && <ModalVideo channel='vimeo' isOpen={() => this.state.isOpen === video}
+                                                            videoId={video} onClose={() => this.setState({ isOpen: false })} />}
+                                                        <button
+                                                            className="btn-small btn-ghost-light "
+                                                            onClick={() => this.setState({ isOpen: video })}>
+                                                            Video
+                                                        </button>
                                                     </div>
                                                     
+                                                    {/* <div className="video-react">
+                                                        <p><a href={"https://vimeo.com/"+video+"?autoplay=1"}
+                                                            className="popup-vimeo btn-small btn-ghost-light">Video</a></p>                                
+                                                    </div> */}
+                                                    
                                                 </div>
+
+                                               
+
                                             </div>
+                                            
                                         )}
                                     </Draggable>
                                 )
