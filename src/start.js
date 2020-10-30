@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+<<<<<<< HEAD
 import ModalVideo from "react-modal-video";
 import { AutoScaling } from "aws-sdk";
+=======
+import ModalVideo from 'react-modal-video';
+
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
 
 
 
@@ -65,6 +70,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 });
 //style on drag
 const getListStyle = (isDraggingOver) => ({
+<<<<<<< HEAD
     //background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
     minHeight: 480,
     padding: grid,
@@ -77,18 +83,35 @@ const getListStyle = (isDraggingOver) => ({
     //justifyContent: "center",
     // margin: "auto",
 
+=======
+    background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
+    minHeight: 480,
+    // display: 'flex',
+    // padding: grid,
+    // width: 1600,
+    // flexDirection: "row",
+    // flexWrap: "wrap",
+    // justifyContent: "center",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
 
 });
 
 const getListStyleSecond = (isDraggingOver) => ({
     paddingTop: 10,
     paddingBottom: 10,
+<<<<<<< HEAD
     background: isDraggingOver
         ? "rgba(255, 255, 255, 0.1)"
         : "rgba(0, 0, 0, 0.3)",
     //background: isDraggingOver ? "" : "",
     display: "flex",
 
+=======
+    background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.3)",
+    //background: isDraggingOver ? "" : "",
+    display: 'flex',
+    
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
     width: "100%",
     flexDirection: "row",
     flexWrap: "wrap",
@@ -99,15 +122,26 @@ const getListStyleSecond = (isDraggingOver) => ({
     // backgroundSize: 'cover',
     // backgroundPosition: '50%',
     // backgroundAttachment: 'fixed',
+<<<<<<< HEAD
+=======
+
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
 });
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
+<<<<<<< HEAD
             isOpen: false, //ModalVideo
 
             //items: getItems(4),
+=======
+
+            isOpen: false, //ModalVideo---------------------
+
+            // items: getItems(10),
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
             // selected: getItems(1, 2),
             items: [
                 {
@@ -148,8 +182,12 @@ class App extends Component {
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/holographic-performance/",
                     filter: "hitech",
+<<<<<<< HEAD
                     info:
                         "“materialize” everything that comes up with imagination ",
+=======
+                    info: "“materialize” everything that comes up with imagination ",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "116053237",
                     details: "max 10min | 8x6m | highlight act ",
                 },
@@ -204,8 +242,12 @@ class App extends Component {
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/aerial-chandelier-show-act/",
                     filter: "aerial",
+<<<<<<< HEAD
                     info:
                         "an oversized chandelier, 2000 sparkling crystals, and high-class acrobatics",
+=======
+                    info: "an oversized chandelier, 2000 sparkling crystals, and high-class acrobatics",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "119430517",
                     details: "max 6min | 2x2m | gala/show ",
                 },
@@ -252,8 +294,42 @@ class App extends Component {
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/bodypercussion/",
                     filter: "dance",
+<<<<<<< HEAD
                     info:
                         "The instruments: the own body and the simplest requisites",
+=======
+                    info: "ballet and acrobatics combined “Adagio” on the ground and in the air",
+                    video: "119430517",
+                    details: "max 5min | 4x4m | gala/show ",
+                },
+
+                {
+                    name: "ACROBATIC DANCE DUET",
+                    img: "./static/acrobatic-dance-duet-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/acrobatic-dance-duet/",
+                    filter: "dance",
+                    info: "The highest art of acrobatics, dance, and gymnastics come together",
+                    video: "119430517",
+                    details: "max 5min | 4x4m | gala/show ",
+                },
+
+                {
+                    name: "STREET DANCE CHAMPIONS",
+                    img: "./static/street-dance-champions-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/street-dance-champions/",
+                    filter: "dance",
+                    info: "Gifted dancers, spectacular hip-hop, the winners of the hip-hop World Championship",
+                    video: "120694062",
+                    details: "max 10min | 6x4m | gala/show ",
+                },
+
+                {
+                    name: "BODYPERCUSSION",
+                    img: "./static/bodypercussion-01-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/bodypercussion/",
+                    filter: "dance",
+                    info: "The instruments: the own body and the simplest requisites",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "117275535",
                     details: "max 8min | 4x4m | gala/show ",
                 },
@@ -261,6 +337,7 @@ class App extends Component {
                 {
                     name: "MUSICAL STAR SINGERS",
                     img: "./static/musical-star-singer-8-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/musical-star-singers/",
                     filter: "music",
@@ -279,6 +356,21 @@ class App extends Component {
                     filter: "music",
                     info:
                         "Live and without instruments – but still a whole orchestra performs",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/musical-star-singers/",
+                    filter: "music",
+                    info: "Voices that go under the skin, Singers from well-known musical theater productions",
+                    video: "118121682",
+                    details: "max 45min | 6x3m | gala/show ",
+                },
+                
+                {
+                    name: "A CAPELLA BEATBOX SINGER",
+                    img: "./static/acapella_group_00-e1496228761814-650x365.jpg",
+                    link: "https://event-entertainment.eu/language/en/portfolio/a-capella-band/",
+                    filter: "music",
+                    info: "Live and without instruments – but still a whole orchestra performs",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "117475280",
                     details: "max 45min | 8x3m | gala/show ",
                 },
@@ -286,11 +378,17 @@ class App extends Component {
                 {
                     name: "CLASSICAL ENSEMBLE",
                     img: "./static/klassik-ensemble-03-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/classical-ensemble/",
                     filter: "music",
                     info:
                         "your company accompanied live by members of a symphony orchestra",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/classical-ensemble/",
+                    filter: "music",
+                    info: "your company accompanied live by members of a symphony orchestra",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "170281136",
                     details: "max 45min | 3x4m | gala/show ",
                 },
@@ -298,11 +396,17 @@ class App extends Component {
                 {
                     name: "BMX WORLD CHAMPION FLATLAND",
                     img: "./static/bmx-weltmeister-flatland-05-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/bmx-world-champion/",
                     filter: "special",
                     info:
                         " the rider and his bike melt to a unit of dynamic, speed, and acrobatics ",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/bmx-world-champion/",
+                    filter: "special",
+                    info: " the rider and his bike melt to a unit of dynamic, speed, and acrobatics ",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "120468132",
                     details: "max 10min | 6x6m | gala/show ",
                 },
@@ -310,11 +414,17 @@ class App extends Component {
                 {
                     name: "THE MOVER WALKING ACT",
                     img: "./static/the-movers-walking-act-01-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/the-mover-walking-act-2/",
                     filter: "special",
                     info:
                         "Like marionettes without strings. They illustrate and initiate, interact and inform",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/the-mover-walking-act-2/",
+                    filter: "special",
+                    info: "Like marionettes without strings. They illustrate and initiate, interact and inform",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "119330265",
                     details: "max 10min | 10x2m | walking act ",
                 },
@@ -322,11 +432,17 @@ class App extends Component {
                 {
                     name: "DANCING HORSES SHOW ACT",
                     img: "./static/tanzende-pferde-showact-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/dancing-horses/",
                     filter: "special",
                     info:
                         "The award winning artists enchant the spectators with their mixture of powerful ride and dancing",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/dancing-horses/",
+                    filter: "special",
+                    info: "The award winning artists enchant the spectators with their mixture of powerful ride and dancing",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "121893940",
                     details: "max 15min | 15x20m | highlight act",
                 },
@@ -334,11 +450,17 @@ class App extends Component {
                 {
                     name: "LED PYRO KITES",
                     img: "./static/led-pyro-kites-showact-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/led-pyro-kites/",
                     filter: "special",
                     info:
                         "Open up or end your event with a scenario in the firmament that is just as unique as simple",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/led-pyro-kites/",
+                    filter: "special",
+                    info: "Open up or end your event with a scenario in the firmament that is just as unique as simple",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "121688548",
                     details: "max 15min | 70x30m | highlight act  ",
                 },
@@ -346,11 +468,17 @@ class App extends Component {
                 {
                     name: "CUBE SHOW ACT",
                     img: "./static/cube-showact-05-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/cube-show-act/",
                     filter: "variete",
                     info:
                         "An impressive Jonglange with the cube made of chrome and steel: “force equals mass times acceleration”",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/cube-show-act/",
+                    filter: "variete",
+                    info: "An impressive Jonglange with the cube made of chrome and steel: “force equals mass times acceleration”",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "119452887",
                     details: "max 5min | 5x5m | gala/show ",
                 },
@@ -358,11 +486,17 @@ class App extends Component {
                 {
                     name: "DANCE ON HANDS ",
                     img: "./static/handstand-showact-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/handstand-show-act/",
                     filter: "variete",
                     info:
                         "Two hands, one body, a thousand figures. A combination of Handstand-Acrobatics, contortion and dance",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/handstand-show-act/",
+                    filter: "variete",
+                    info: "Two hands, one body, a thousand figures. A combination of Handstand-Acrobatics, contortion and dance",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "121891303",
                     details: "max 5min | 3x3m | gala/show ",
                 },
@@ -370,6 +504,7 @@ class App extends Component {
                 {
                     name: "HANDVOLTIGE",
                     img: "./static/hand-voltige-showact_01-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/handvoltige-show-act/",
                     filter: "variete",
@@ -377,16 +512,30 @@ class App extends Component {
                         "Up to ten performers whirl across the stage creating moments of breathless suspense",
                     video: "119525075",
                     details: "max 9min | 10x4m | gala/show ",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/handvoltige-show-act/",
+                    filter: "variete",
+                    info: "Up to ten performers whirl across the stage creating moments of breathless suspense",
+                    video: "119525075",
+                    details: "max 9min | 10x4m | gala/show ",
+                    
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                 },
 
                 {
                     name: "CYR WHEEL",
                     img: "./static/CyrWheel_01-e1496232945413-650x365.jpg",
+<<<<<<< HEAD
                     link:
                         "https://event-entertainment.eu/language/en/portfolio/cyr-wheel-show-act/",
                     filter: "variete",
                     info:
                         "the Cyr Wheel is a 360° universe of its own, where impressive pictures are created in its orbit.",
+=======
+                    link: "https://event-entertainment.eu/language/en/portfolio/cyr-wheel-show-act/",
+                    filter: "variete",
+                    info: "the Cyr Wheel is a 360° universe of its own, where impressive pictures are created in its orbit.",
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     video: "110474457",
                     details: "max 5min | 4x6m | gala/show ",
                 },
@@ -394,7 +543,11 @@ class App extends Component {
 
             selected: getItems(),
         };
+<<<<<<< HEAD
         //Modal Video
+=======
+        //Modal Video--------------------------------
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
         this.openModal = this.openModal.bind(this);
 
         /**
@@ -405,8 +558,14 @@ class App extends Component {
         this.id2List = {
             droppable: "items",
             droppable2: "selected",
+
+            
         };
+        
+
     }
+
+    
 
     getList(id) {
         return this.state[this.id2List[id]];
@@ -448,14 +607,27 @@ class App extends Component {
         }
     }
 
+<<<<<<< HEAD
     // MODAL VIDEO
     openModal() {
         this.setState({ isOpen: true });
     }
 
+=======
+    //ModalVideo---------------------------------------------------
+    openModal () {
+        this.setState({ isOpen: true });
+    }
+
+    
+    // Normally you would want to split things out into separate components.
+    // But in this example everything is just done in one place for simplicity
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
     render() {
+
         return (
             <DragDropContext onDragEnd={(result) => this.onDragEnd(result)}>
+                
                 <Droppable droppableId="droppable" direction="horizontal">
                     {(provided, snapshot) => (
                         <div
@@ -464,6 +636,7 @@ class App extends Component {
                             style={getListStyle(snapshot.isDraggingOver)}
                         >
                             {/* ================== Portfolio Filter ==================  */}
+<<<<<<< HEAD
                             <section
                                 id="react"
                                 className="container-fluid portfolio-layout portfolio-columns-fw"
@@ -532,6 +705,35 @@ class App extends Component {
                                                 },
                                                 index
                                             ) => (
+=======
+                            <section id="react" className="container-fluid portfolio-layout portfolio-columns-fw">
+                                <div className="row">
+                                    <header className="sec-heading">
+                                        <h2>Create your Production</h2>
+                                        <span className="subheading">drag and drop the show acts to the AREA below</span>
+                                    </header>
+                                </div>
+                                <div className="row">
+                                    <ul id="pfolio-filters" className="portfolio-filters">
+                                        <li className="active"><a href="#" data-filter="*">All</a></li>
+                                        <li><a href="#" data-filter=".hitech">Hitech</a></li>
+                                        <li><a href="#" data-filter=".aerial">Aerial</a></li>
+                                        <li><a href="#" data-filter=".dance">Dance</a></li>
+                                        <li><a href="#" data-filter=".music">Music</a></li>
+                                        <li><a href="#" data-filter=".special">Special</a></li>
+                                        <li><a href="#" data-filter=".variete">Varieté </a></li>
+                                    
+
+        
+                                    </ul>
+                                </div>
+                                <div className="row">
+                                    <div id='pfolio'>
+                                  
+
+                                        {this.state.items.map(
+                                            ({ name, img, link, filter, info }, index) => (
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                                 <Draggable
                                                     key={name}
                                                     draggableId={name}
@@ -541,22 +743,34 @@ class App extends Component {
                                                     info={info}
                                                 >
                                                     {(provided, snapshot) => (
+<<<<<<< HEAD
                                                         // Show module draggable
                                                         <div
                                                             className="show_module"
                                                             ref={
                                                                 provided.innerRef
                                                             }
+=======
+                                                    // Show module draggable
+                                                        <div
+                                                            className="show_module"
+                                                            ref={provided.innerRef}
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                                             {...provided.draggableProps}
                                                             {...provided.dragHandleProps}
                                                             style={getItemStyle(
                                                                 snapshot.isDragging,
+<<<<<<< HEAD
                                                                 provided
                                                                     .draggableProps
+=======
+                                                                provided.draggableProps
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                                                     .style
                                                             )}
                                                         >
                                                             {/* === Portfolio Items === */}
+<<<<<<< HEAD
                                                             <div
                                                                 className={
                                                                     "portfolio-item " + filter
@@ -595,29 +809,61 @@ class App extends Component {
                                                                         >
                                                                             <i className="fa fa-expand"></i>
                                                                         </a>
+=======
+                                                            {/* <div className={"portfolio-item " + filter}> */}
+                                                            <div className={"portfolio-item " + filter}>
+                                                                <div className="show_module_img-txt"> 
+                                                                    <div className="p-wrapper hover-default">
+                                                                        <img className="responsive" src={img} alt={name}></img>
+                                                                        <div className="p-hover">
+                                                                            <div className="p-content">
+                                                                                <h4>{name}</h4>
+                                                                                <h6 className="subheading">{info}</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a href={link} className="open-btn"><i className="fa fa-expand"></i></a>
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                         </div>
                                                     )}
                                                 </Draggable>
                                             )
                                         )}
                                         {provided.placeholder}
+<<<<<<< HEAD
                                     </div>
                                     {/* //pfolio */}
                                 </div>
                                 {/* //row */}
                             </section>
                         </div>
+=======
+                                    </div>{/* //pfolio */}
+
+
+                                </div>{/* //row */}
+                                
+                            
+                                
+                            </section>
+                        </div>//kasten 
+
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     )}
                 </Droppable>
                 {/* ========== SECOND AREA ==========  */}
                 <div>
                     <header className="sec-heading section-30-0">
+<<<<<<< HEAD
                         <span className="subheading">
                             drop the modules here
                         </span>
+=======
+                        <span className="subheading">drop the modules here</span>
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                     </header>
                 </div>
                 <Droppable droppableId="droppable2" direction="horizontal">
@@ -627,10 +873,14 @@ class App extends Component {
                             style={getListStyleSecond(snapshot.isDraggingOver)}
                         >
                             {this.state.selected.map(
+<<<<<<< HEAD
                                 (
                                     { name, img, link, filter, details, video },
                                     index
                                 ) => (
+=======
+                                ({ name, img, link, filter, details, video  }, index) => (
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                     <Draggable
                                         key={name}
                                         draggableId={name}
@@ -641,6 +891,10 @@ class App extends Component {
                                         video={video}
                                     >
                                         {(provided, snapshot) => (
+
+                                           
+                                            
+                                            
                                             //Show module dragged
                                             <div
                                                 className="show_module_second"
@@ -653,6 +907,7 @@ class App extends Component {
                                                         .style
                                                 )}
                                             >
+<<<<<<< HEAD
                                                 <div className="show_module_img-txt_second">
                                                     <div>
                                                         <img src={img}></img>
@@ -692,19 +947,56 @@ class App extends Component {
                                                             Video
                                                         </button>
                                                     </div>
+=======
+                                                 
+                                                <div className="show_module_img-txt_second">
+                                                    <div>
+                                                        <img src={img}></img>
+                                                        {name} <br /> {filter} {'| '}{details}
+                                                    </div>
+                                                    {/* Modal Video------------------------------------ */}
+                                                    <div className="video-react-button">
+                                                        {this.state.isOpen==video && <ModalVideo channel='vimeo' isOpen={() => this.state.isOpen === video}
+                                                            videoId={video} onClose={() => this.setState({ isOpen: false })} />}
+                                                        <button
+                                                            className="btn-small btn-ghost-light "
+                                                            onClick={() => this.setState({ isOpen: video })}>
+                                                            Video
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    {/* <div className="video-react">
+                                                        <p><a href={"https://vimeo.com/"+video+"?autoplay=1"}
+                                                            className="popup-vimeo btn-small btn-ghost-light">Video</a></p>                                
+                                                    </div> */}
+                                                    
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                                 </div>
+
+                                               
+
                                             </div>
+                                            
                                         )}
                                     </Draggable>
                                 )
                             )}
 
+<<<<<<< HEAD
                             {console.log(
                                 "SELECTED ITEMS",
                                 JSON.stringify(this.state.selected)
                             )}
                             {/* {this.state.selected.map({ name, filter, link })}
                             { console.log('SELECTED ITEMS TO SEND', JSON.stringify(this.state.selected.map({ name, filter, link })))} */}
+=======
+                            
+                            
+                            { console.log('SELECTED ITEMS', JSON.stringify(this.state.selected))}
+                            {/* {this.state.selected.map({ name, filter, link })}
+                            { console.log('SELECTED ITEMS TO SEND', JSON.stringify(this.state.selected.map({ name, filter, link })))} */}
+                            
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
 
                             {provided.placeholder}
                             <div></div>
@@ -773,6 +1065,7 @@ class App extends Component {
                                             name="message"
                                             id="message-contact-1"
                                             rows="5"
+<<<<<<< HEAD
                                             //placeholder={JSON.stringify(this.state.selected, null, 1)}
                                             value={JSON.stringify(
                                                 this.state.selected,
@@ -780,6 +1073,12 @@ class App extends Component {
                                                 1
                                             )}
 
+=======
+                                            // placeholder={JSON.stringify(this.state.selected, null, 1)}
+                                            value={JSON.stringify(this.state.selected, null, 1)}
+                                           
+                                            
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
                                             // "Your Message"
                                         >
                                             {this.state.selected}
@@ -801,6 +1100,7 @@ class App extends Component {
                         </div>
                     </div>
                 }
+                
             </DragDropContext>
         );
     }
@@ -809,3 +1109,5 @@ class App extends Component {
 console.log("GG 12:00");
 // Put the things into the DOM!
 ReactDOM.render(<App />, document.getElementById("react"));
+
+

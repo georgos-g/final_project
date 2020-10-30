@@ -122,7 +122,11 @@ p > a:focus {
 .navbar .navbar-nav li a {
 	text-transform: uppercase;
 	font-size: 1em;
+<<<<<<< HEAD
 	/* font-weight: 600; */
+=======
+	font-weight: 600;
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
 	margin-top: 10px;
 	border-bottom-color: #7C7C7C;
 	border-bottom-width: 1px;
@@ -1118,7 +1122,11 @@ padding-top: 0px;
 	font-size: 1em;
 	letter-spacing: 2.5px;
 	color: #777;
+<<<<<<< HEAD
 	font-weight: 400;
+=======
+	font-weight: 600;
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
 }
 
 

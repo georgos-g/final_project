@@ -1,6 +1,10 @@
 /*!
  * VERSION: 1.13.1
+<<<<<<< HEAD
  * 
+=======
+ * DATE: 2014-07-22
+>>>>>>> acd00250f98135679d4a1fc5125696176e692a52
  * UPDATES AND DOCS AT: https://www.greensock.com
  *
  * @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
