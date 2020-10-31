@@ -40,7 +40,7 @@
 
 
         <!-- main CSS -->
-        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/scss/main.css">
         <link rel="stylesheet" href="assets/styles/responsive.css">
        
         <!-- load cubeportfolio css file -->
@@ -573,7 +573,7 @@ And of course we can rely on a tried and tested backstage team (stage director, 
               <!-- Filters -->
                   
           <div class="row">
-    <div class="clearfix">
+          <div class="clearfix">
              <div id="js-filters-lightbox-gallery2" class="cbp-l-filters-alignCenter">
             <div data-filter="*" class="cbp-filter-item-active cbp-filter-item ">All</div>
             <div data-filter=".public" class="cbp-filter-item">Public Events</div>
@@ -585,9 +585,10 @@ And of course we can rely on a tried and tested backstage team (stage director, 
     </div>
  <!-- Lightbox galery -->
    <div id="js-grid-lightbox-gallery" class="cbp">
-	      <!-- <!-- Project 9 -->
+	      <!-- Project 9 -->
         <div class="cbp-item corporate">
-            <a href="assets/projects/ajax-lightbox-gallery/project9.html" class="cbp-caption cbp-singlePageInline" data-title="ŠKODA TRAINING DRESDEN<br>Projection Mapping performance" rel="nofollow">
+            <a href="assets/projects/ajax-lightbox-gallery/project9.html" class="cbp-caption cbp-singlePageInline" 
+            data-title="ŠKODA TRAINING DRESDEN<br>Projection Mapping performance" rel="nofollow">
                
                 <div class="cbp-caption-defaultWrap">
                     <img src="assets/images/portfolio/projekt9.jpg" alt="ŠKODA TRAINING DRESDEN">
@@ -610,7 +611,8 @@ And of course we can rely on a tried and tested backstage team (stage director, 
 	   
 	   <!-- Project 8 -->
         <div class="cbp-item corporate">
-            <a href="assets/projects/ajax-lightbox-gallery/project8.html" class="cbp-caption cbp-singlePageInline" data-title="ŠKODA DEALER EVENT DUBROVNIK<br>Hoverboard Performance with live Live Music" rel="nofollow">
+            <a href="assets/projects/ajax-lightbox-gallery/project8.html" class="cbp-caption cbp-singlePageInline" 
+            data-title="ŠKODA DEALER EVENT DUBROVNIK<br>Hoverboard Performance with live Live Music" rel="nofollow">
                
                 <div class="cbp-caption-defaultWrap">
                     <img src="assets/images/portfolio/projekt8.jpg" alt="AUDI A6L PRESENTATION CHINA">
@@ -1621,8 +1623,12 @@ D50677 Cologne, Germany </span>
                     <label for="email-contact-1">Email</label>
                     <span class="pull-right alert-error"></span>
                       
-                      <p class="antispam">Leave this empty: <br /><input name="url" /></p>
+                      
                   </div>
+
+                   <!-- Anti Spam -->
+                   <input type="text" id="website" name="website"/>
+
 
                   <!-- Message -->
                   <div class="form-group">
@@ -2144,12 +2150,12 @@ Before personal data is provided by the data subject, the data subject must cont
         <script src="assets/js/vendor/jquery.easypiechart.min.js"></script>
         <script src="assets/js/vendor/countup.min.js"></script>
         <script src="assets/js/vendor/isotope.min.js"></script>
+        
         <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
         <script src="assets/js/vendor/jquery.mb.YTPlayer.min.js"></script>
         <script src="assets/js/vendor/jquery.ajaxchimp.js"></script><!-- Google Maps -->
-        <!--  <script src="assets/js/gmap.js"></script>-->
-        <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoVPpstjZwkTz0BAxqE9vJgrXha3Eotug"></script>-->
+      
 			  <!-- Main JS -->
         <script src="assets/js/main.js"></script>
         <script src="bundle.js"></script>

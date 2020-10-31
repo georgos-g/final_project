@@ -89,6 +89,8 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['email']){
     died($error_message);
  
   }
+
+  if(!empty($_POST['website'])) die();
  
     $email_message = "Form details below.\n\n";
  

@@ -1848,7 +1848,7 @@ hr {
 	1.0 Typography
 -------------------------------------------------- */
 mark {
-  background: #cafe48;
+  background: #FD8907;
 }
 
 ::-moz-selection {
@@ -1868,7 +1868,7 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
   font-weight: 300;
   letter-spacing: 0.2px;
   line-height: 1.8em;
-  color: #777;
+  color: #B3B3B3;
 }
 
 h1, .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer,
@@ -1927,7 +1927,7 @@ h6,
 .checkout-table tbody tr td:first-child,
 .prod-reviews .tp-review .tpr-name {
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  color: #111;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -2044,17 +2044,17 @@ p > a {
 }
 
 p > a:visited {
-  color: #1c8cbc;
+  color: #ffcaca;
   text-decoration: none;
 }
 
 p > a:visited:hover, p > a:visited:focus {
-  color: #2caadf;
+  color: #fffdfd;
   text-decoration: none;
 }
 
 p > a:hover, p > a:focus {
-  color: #1c8cbc;
+  color: #ffcaca;
   text-decoration: none;
   border-bottom: 1px solid #2caadf;
 }
@@ -8463,7 +8463,7 @@ fieldset[disabled] .form-control:hover {
   margin-bottom: 5px;
   font-size: .9em;
   letter-spacing: .3px;
-  color: #777;
+  color: #B3B3B3;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -8855,7 +8855,7 @@ form .input-error-2:focus {
   font-size: .8em;
   line-height: 1;
   letter-spacing: 1px;
-  color: #777;
+  color: #B3B3B3;
 }
 
 .contact-2 form .alert {
@@ -11640,7 +11640,7 @@ form .input-error-2:focus {
 .shop-sidebar .shop-widget .cart-item .cp-name, .shop-sidebar-vertical .shop-widget .cart-item .cp-name {
   padding-top: 8px;
   letter-spacing: 1px;
-  color: #777;
+  color: #B3B3B3;
 }
 
 .shop-sidebar .shop-widget .cart-item .cp-name:hover, .shop-sidebar-vertical .shop-widget .cart-item .cp-name:hover {
@@ -11728,7 +11728,7 @@ form .input-error-2:focus {
   margin-bottom: 5px;
   font-size: .9em;
   letter-spacing: .3px;
-  color: #777;
+  color: #B3B3B3;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -12179,7 +12179,7 @@ form .input-error-2:focus {
   font-size: 12px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #777;
+  color: #B3B3B3;
 }
 
 .prod-name {
@@ -12214,7 +12214,7 @@ form .input-error-2:focus {
 .prod-rating li:last-child {
   padding-left: 10px;
   font-size: 12px;
-  color: #777;
+  color: #B3B3B3;
 }
 
 .prod-rating li a {

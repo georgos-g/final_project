@@ -51,6 +51,8 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     padding: grid * 1,
     margin: `0 0 ${grid}px 0`,
     display: "inline-flex",
+    //flexDirection: "row",
+    //flexWrap: "wrap",
 
     // change background colour if dragging
     //background: isDragging ? "rgba(255, 255, 255, 0.5)" : "grey",
@@ -63,6 +65,14 @@ const getListStyle = (isDraggingOver) => ({
     //background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
     minHeight: 480,
     padding: grid,
+    //display: 'inline-flex',
+    //overflow: "auto",
+
+    //width: "100%",
+    //flexDirection: "row",
+    //flexWrap: "wrap",
+    //justifyContent: "center",
+    // margin: "auto",
 });
 
 const getListStyleSecond = (isDraggingOver) => ({
@@ -444,75 +454,39 @@ class App extends Component {
                 <Droppable droppableId="droppable" direction="horizontal">
                     {(provided, snapshot) => (
                         <div
-                            className=""
+                            className="row"
                             ref={provided.innerRef}
                             style={getListStyle(snapshot.isDraggingOver)}
                         >
                             {/* ================== Portfolio Filter ==================  */}
                             <section
                                 id="react"
-                                className="container-fluid portfolio-layout portfolio-columns-fw"
+                                className="portfolio-columns-fw"
                             >
                                 <div className="row">
                                     <header className="sec-heading">
                                         <h2>Create your Production</h2>
                                         <span className="subheading">
-                                            drag and drop the show acts to
-                                            the AREA below
+                                            drag and drop the show acts to the
+                                            AREA below
                                         </span>
                                     </header>
                                 </div>
                                 <div className="row">
-                                    <div align="center">
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="all"
-                                        >
-                                            All
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="hitech"
-                                        >
-                                            Hitech
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="aerial"
-                                        >
-                                            Aerial
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="dance"
-                                        >
-                                            Dance
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="music"
-                                        >
-                                            Music
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="special"
-                                        >
-                                            Special
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="variete"
-                                        >
-                                            Varieté
-                                        </button>
+                                    <div className="clearfix">
+                                        <div id="js-filters-full-width" className="cbp-l-filters-alignCenter">
+                                            <div data-filter=".hitech" className="cbp-filter-item-active cbp-filter-item ">hitech</div>
+                                            <div data-filter=".aerial" className="cbp-filter-item">aerial</div>
+                                            <div data-filter=".music" className="cbp-filter-item">music</div>
+                                            <div data-filter=".special" className="cbp-filter-item">special</div>
+                                            <div data-filter=".variete" className="cbp-filter-item">varieté</div>
+          
+                                        </div>
+        
                                     </div>
-                                    {""}
-                                    <br />
                                 </div>
-
-                                <div className="row">
-                                    <div id="pfolio2">
+                                <div className="">
+                                    <div id="js-grid-full-width"className="cbp">
                                         {this.state.items.map(
                                             (
                                                 {
@@ -535,10 +509,7 @@ class App extends Component {
                                                     {(provided, snapshot) => (
                                                         // Show module draggable
                                                         <div
-                                                            className={
-                                                                "filter2 " +
-                                                                filter
-                                                            }
+                                                            className=""
                                                             ref={
                                                                 provided.innerRef
                                                             }
@@ -553,11 +524,16 @@ class App extends Component {
                                                         >
                                                             {/* === Portfolio Items === */}
 
-                                                            <div className="show_module ">
-                                                                <div className="portfolio-item show_module_img-txt">
+                                                            <div
+                                                                className={
+                                                                    "cbp-item " +
+                                                                    filter
+                                                                }
+                                                            >
+                                                                <div className="show_module_img-txt">
                                                                     <div className="p-wrapper hover-default">
                                                                         <img
-                                                                            className="img-responsive"
+                                                                            className=""
                                                                             src={
                                                                                 img
                                                                             }

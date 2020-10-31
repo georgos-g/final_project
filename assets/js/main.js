@@ -615,26 +615,38 @@
     } // initPortfolio
 
     /* --------------------------------------------------
-	GG Filtering Img 
+	GG filtering show acts 
     -------------------------------------------------- */
-    $("#pfolio2").click(function(){
-        $(".portfolio-item").removeClass("active");
-  
+    $(document).ready(function(){
+       
+
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+        
+            if(value == "all")
+            {
+            
+        
+                $('.filter2').show('4000');
+            }
+            else
+            {
+                
+               
+        
+                $(".filter2").not('.'+value).hide('4000');
+                $('.filter2').filter('.'+value).show('4000');
+        
+            }
+        });
+        
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
         $(this).addClass("active");
-  
-        var dataFilter = $(this).data('data-filter');
-  
-        if(dataFilter == "all") {
-            $(".elements").show();
-        }
-        else
-        {
-            $(".elements").hide();
-            $("." + dataFilter).show();
-        }
+        $('button[data-filter="hitech"]').click()
+        
     });
-
-
 
 
 

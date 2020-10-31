@@ -51,6 +51,8 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     padding: grid * 1,
     margin: `0 0 ${grid}px 0`,
     display: "inline-flex",
+    //flexDirection: "row",
+    //flexWrap: "wrap",
 
     // change background colour if dragging
     //background: isDragging ? "rgba(255, 255, 255, 0.5)" : "grey",
@@ -63,6 +65,14 @@ const getListStyle = (isDraggingOver) => ({
     //background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
     minHeight: 480,
     padding: grid,
+    //display: 'inline-flex',
+    //overflow: "auto",
+
+    //width: "100%",
+    //flexDirection: "row",
+    //flexWrap: "wrap",
+    //justifyContent: "center",
+    // margin: "auto",
 });
 
 const getListStyleSecond = (isDraggingOver) => ({
@@ -457,60 +467,54 @@ class App extends Component {
                                     <header className="sec-heading">
                                         <h2>Create your Production</h2>
                                         <span className="subheading">
-                                            drag and drop the show acts to
-                                            the AREA below
+                                            drag and drop the show acts to the
+                                            AREA below
                                         </span>
                                     </header>
                                 </div>
                                 <div className="row">
-                                    <div align="center">
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="all"
-                                        >
-                                            All
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="hitech"
-                                        >
-                                            Hitech
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="aerial"
-                                        >
-                                            Aerial
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="dance"
-                                        >
-                                            Dance
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="music"
-                                        >
-                                            Music
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="special"
-                                        >
-                                            Special
-                                        </button>
-                                        <button
-                                            className="btn btn-default filter-button"
-                                            data-filter="variete"
-                                        >
-                                            Varieté
-                                        </button>
-                                    </div>
-                                    {""}
-                                    <br />
+                                    <ul
+                                        id="pfolio-filters"
+                                        className="portfolio-filters"
+                                    >
+                                        <li className="active">
+                                            <a href="#" data-filter="*">
+                                                All
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-filter=".hitech">
+                                                Hitech
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-filter=".aerial">
+                                                Aerial
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-filter=".dance">
+                                                Dance
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-filter=".music">
+                                                Music
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-filter=".special">
+                                                Special
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-filter=".variete">
+                                                Varieté
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-
+                            
                                 <div className="row">
                                     <div id="pfolio2">
                                         {this.state.items.map(
@@ -535,10 +539,7 @@ class App extends Component {
                                                     {(provided, snapshot) => (
                                                         // Show module draggable
                                                         <div
-                                                            className={
-                                                                "filter2 " +
-                                                                filter
-                                                            }
+                                                            className="show_module"
                                                             ref={
                                                                 provided.innerRef
                                                             }
@@ -553,11 +554,16 @@ class App extends Component {
                                                         >
                                                             {/* === Portfolio Items === */}
 
-                                                            <div className="show_module ">
-                                                                <div className="portfolio-item show_module_img-txt">
+                                                            <div
+                                                                className={
+                                                                    "portfolio-item " +
+                                                                    filter
+                                                                }
+                                                            >
+                                                                <div className="show_module_img-txt">
                                                                     <div className="p-wrapper hover-default">
                                                                         <img
-                                                                            className="img-responsive"
+                                                                            className="responsive"
                                                                             src={
                                                                                 img
                                                                             }
