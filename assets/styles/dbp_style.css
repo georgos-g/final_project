@@ -1476,7 +1476,7 @@ p > a:focus {
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border: 1px solid #2e2e2e;
-    height: 660px;
+    height: 690px;
 }
 
 @media (max-width: 1200px) {

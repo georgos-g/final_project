@@ -60,9 +60,10 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 });
 //style on drag
 const getListStyle = (isDraggingOver) => ({
-    //background: isDraggingOver ? "rgba(255, 255, 255, 0.1)" : "#161616",
+    //background: isDraggingOver ? "rgba(0, 0, 0, 0.3)" : "#161616",
     minHeight: 480,
-    padding: grid,
+    //padding: grid,
+    paddingTop: 5,
 });
 
 const getListStyleSecond = (isDraggingOver) => ({
@@ -71,14 +72,14 @@ const getListStyleSecond = (isDraggingOver) => ({
     background: isDraggingOver
         ? "rgba(255, 255, 255, 0.1)"
         : "rgba(0, 0, 0, 0.3)",
-    //background: isDraggingOver ? "" : "",
+
     display: "flex",
 
     width: "100%",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    minHeight: 220,
+    minHeight: 230,
     //img bg----
     // backgroundImage: "url('./assets/images/bg3.jpg')",
     // backgroundSize: 'cover',
@@ -457,51 +458,51 @@ class App extends Component {
                                     <header className="sec-heading">
                                         <h2>Create your Production</h2>
                                         <span className="subheading">
-                                            drag and drop the show acts to
-                                            the AREA below
+                                            drag and drop the show acts to the
+                                            AREA below
                                         </span>
                                     </header>
                                 </div>
                                 <div className="row">
                                     <div align="center">
-                                        <button
-                                            className="btn btn-default filter-button"
+                                        {/* <button
+                                            className="btn filter-button"
                                             data-filter="all"
                                         >
                                             All
-                                        </button>
+                                        </button> */}
                                         <button
-                                            className="btn btn-default filter-button"
+                                            className="btn filter-button"
                                             data-filter="hitech"
                                         >
                                             Hitech
                                         </button>
                                         <button
-                                            className="btn btn-default filter-button"
+                                            className="btn filter-button"
                                             data-filter="aerial"
                                         >
                                             Aerial
                                         </button>
                                         <button
-                                            className="btn btn-default filter-button"
+                                            className="btn filter-button"
                                             data-filter="dance"
                                         >
                                             Dance
                                         </button>
                                         <button
-                                            className="btn btn-default filter-button"
+                                            className="btn filter-button"
                                             data-filter="music"
                                         >
                                             Music
                                         </button>
                                         <button
-                                            className="btn btn-default filter-button"
+                                            className="btn filter-button"
                                             data-filter="special"
                                         >
                                             Special
                                         </button>
                                         <button
-                                            className="btn btn-default filter-button"
+                                            className="btn filter-button"
                                             data-filter="variete"
                                         >
                                             Varieté
@@ -610,6 +611,8 @@ class App extends Component {
                         <span className="subheading">
                             drop the modules here
                         </span>
+
+                        <div className="arrow bounce fa fa-angle-double-down fa-2x"></div>
                     </header>
                 </div>
                 <Droppable droppableId="droppable2" direction="horizontal">
@@ -633,7 +636,7 @@ class App extends Component {
                                         video={video}
                                     >
                                         {(provided, snapshot) => (
-                                            //Show module dragged
+                                            // dragged modules
                                             <div
                                                 className="show_module_second"
                                                 ref={provided.innerRef}
