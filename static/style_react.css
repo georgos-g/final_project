@@ -22,13 +22,8 @@
     margin: 1px;
     padding-right: 4px;
     padding-left: 4px;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; */
     width: 304px;
     height: 196px;
-    /* background-color: rgba(0, 0, 0, 0.6) !important; */
 }
 .show_module_second img {
     width: 296px;
@@ -49,6 +44,7 @@
     height: 150px;
 }
 element.style {
+
 }
 
 .show_module_description {
@@ -71,7 +67,6 @@ element.style {
 
 #pfolio {
     clear: both;
-
     margin: auto;
     width: 1600px;
 }
@@ -79,7 +74,7 @@ element.style {
 #pfolio2 {
     text-align: center;
     margin: auto;
-    max-width: 2000px;
+    max-width: 1600px;
     padding-bottom: 50px;
 }
 

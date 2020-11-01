@@ -89,8 +89,8 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['email']){
     died($error_message);
  
   }
-
-  if(!empty($_POST['website'])) die();
+    if(!empty($_POST['website'])) die();
+    
  
     $email_message = "Form details below.\n\n";
  
@@ -120,11 +120,11 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['email']){
  
 // create email headers
  
-$headers = 'From: '.$email_from."\r\n".
+$headers =  'From: '.$email_from."\r\n".
  
-'Reply-To: '.$email_from."\r\n" .
+            'Reply-To: '.$email_from."\r\n" .
  
-'X-Mailer: PHP/' . phpversion();
+            'X-Mailer: PHP/' . phpversion();
  
 @mail($email_to, $email_subject, $email_message, $headers);  
  ?>

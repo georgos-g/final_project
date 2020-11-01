@@ -1760,7 +1760,7 @@ hr {
 	1.0 Typography
 -------------------------------------------------- */
 mark {
-  background: #FD8907; }
+  background: #cafe48; }
 
 ::-moz-selection {
   color: #fff;
@@ -1777,7 +1777,7 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
   font-weight: 300;
   letter-spacing: 0.2px;
   line-height: 1.8em;
-  color: #B3B3B3; }
+  color: #777; }
 
 h1, .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer,
 h2,
@@ -1835,7 +1835,7 @@ h6,
 .checkout-table tbody tr td:first-child,
 .prod-reviews .tp-review .tpr-name {
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  color: white;
+  color: #111;
   text-transform: uppercase; }
 
 .dropcaps:first-child:first-letter {
@@ -1887,13 +1887,13 @@ a {
 p > a {
   border-bottom: 1px solid rgba(44, 170, 223, 0); }
   p > a:visited {
-    color: #ffcaca;
+    color: #1c8cbc;
     text-decoration: none; }
     p > a:visited:hover, p > a:visited:focus {
-      color: #fffdfd;
+      color: #2caadf;
       text-decoration: none; }
   p > a:hover, p > a:focus {
-    color: #ffcaca;
+    color: #1c8cbc;
     text-decoration: none;
     border-bottom: 1px solid #2caadf; }
 
@@ -4612,7 +4612,7 @@ fieldset[disabled] .form-control {
       font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
       font-size: 13px;
       letter-spacing: 3.5px;
-      color: #ececec; }
+      color: #999; }
     .team-3col .t-item .t-info .social-links, .team-4col .t-item .t-info .social-links, .freelancer-about .t-item .t-info .social-links {
       margin: 0;
       padding: 15px 0 0 0;
@@ -6712,7 +6712,7 @@ fieldset[disabled] .form-control {
   margin-bottom: 5px;
   font-size: .9em;
   letter-spacing: .3px;
-  color: #B3B3B3;
+  color: #777;
   border-bottom: 1px solid rgba(17, 17, 17, 0);
   transition: all .3s; }
   .sidebar .categories-widget .widget-item a span {
@@ -6992,7 +6992,7 @@ form .input-error-2 {
     font-size: .8em;
     line-height: 1;
     letter-spacing: 1px;
-    color: #B3B3B3; }
+    color: #777; }
 .contact-2 form .alert {
   margin-top: 30px; }
 
@@ -9109,7 +9109,7 @@ form .input-error-2 {
     .shop-sidebar .shop-widget .cart-item .cp-name, .shop-sidebar-vertical .shop-widget .cart-item .cp-name {
       padding-top: 8px;
       letter-spacing: 1px;
-      color: #B3B3B3; }
+      color: #777; }
       .shop-sidebar .shop-widget .cart-item .cp-name:hover, .shop-sidebar-vertical .shop-widget .cart-item .cp-name:hover {
         color: #111; }
     .shop-sidebar .shop-widget .cart-item .cp-price, .shop-sidebar-vertical .shop-widget .cart-item .cp-price {
@@ -9173,7 +9173,7 @@ form .input-error-2 {
     margin-bottom: 5px;
     font-size: .9em;
     letter-spacing: .3px;
-    color: #B3B3B3;
+    color: #777;
     border-bottom: 1px solid rgba(17, 17, 17, 0);
     transition: all .3s; }
     .shop-sidebar .categories-widget .widget-item a span, .shop-sidebar-vertical .categories-widget .widget-item a span {
@@ -9508,7 +9508,7 @@ form .input-error-2 {
   font-size: 12px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #B3B3B3; }
+  color: #777; }
 
 .prod-name {
   margin-top: 5px;
@@ -9534,7 +9534,7 @@ form .input-error-2 {
     .prod-rating li:last-child {
       padding-left: 10px;
       font-size: 12px;
-      color: #B3B3B3; }
+      color: #777; }
     .prod-rating li a {
       color: #111; }
       .prod-rating li a:focus {

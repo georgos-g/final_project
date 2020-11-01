@@ -798,6 +798,6 @@ class App extends Component {
     }
 }
 
-console.log("GG 12:00");
+console.log("GG 201101_13:18");
 // Put the things into the DOM!
 ReactDOM.render(<App />, document.getElementById("react"));
